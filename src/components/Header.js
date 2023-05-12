@@ -1,11 +1,21 @@
-import logo from '../Images/Logo.svg';
+import React from 'react';
+import restaurant from '../Images/restaurant01.png';
+
 
 const Header = () => {
     return (
-        <>      
-        <h1>This is a Header!</h1>
-        <img src={logo} alt='Logo'/>
-        </>
+        <header>
+            <section>
+                <>
+                    <h2>Little Lemon</h2>
+                    <h3>Chicago</h3>
+                    <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+                </>
+                <>
+                    <img src={restaurant} alt='restaurant' />
+                </>
+            </section>
+        </header>
 
     )
 };
