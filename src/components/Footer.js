@@ -5,10 +5,10 @@ const Footer = () => {
     return (
         <footer>
             <section>
-                <>
+                <div>
                     <img src={logo2} alt="Little Lemon Logo2" />
-                </>
-                <>
+                </div>
+                <div>
                     <h3>Document Navigation</h3>
                     <ul>
                         <li>Home</li>
@@ -18,23 +18,23 @@ const Footer = () => {
                         <li>Order Online</li>
                         <li>Login</li>
                     </ul>
-                </>
-                <>
+                </div>
+                <div>
                     <h3>Contact</h3>
                     <ul>
                         <li>Address</li>
                         <li>Phone number</li>
                         <li>Email</li>
                     </ul>
-                </>
-                <>
-                    <h3>Document Navigation</h3>
+                </div>
+                <div>
+                    <h3>Social Media Links</h3>
                     <ul>
                         <li>Address</li>
                         <li>Phone number</li>
                         <li>Email</li>
                     </ul>
-                </>
+                </div>
 
             </section>
 
