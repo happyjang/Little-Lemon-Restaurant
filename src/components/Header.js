@@ -11,7 +11,7 @@ const Header = () => {
                     <h2>Little Lemon</h2>
                     <h3>Chicago</h3>
                     <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <Link to="/Booking"><button aria-label="On Click">Reserve a table</button></Link>
+                    <Link to="/booking"><button aria-label="On Click">Reserve a table</button></Link>
                 </div>
                 <div>
                     <img src={restaurant} alt='restaurant' />

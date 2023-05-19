@@ -14,6 +14,8 @@ nav {
     font-weight: bold;
 }
 
+
+
 nav img {
     width: 200px;
 }
@@ -26,6 +28,11 @@ nav ul li {
 header {
     padding-top: 120px;
     background-color: #495e57;
+}
+
+nav ul li:hover {
+    color: #F4CE14;
+    transition: 0.25s;
 }
 
 header h2 {
@@ -51,7 +58,7 @@ header section {
 }
 
 @media (min-width: 700px) {
-    header section    {
+    header section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
@@ -83,6 +90,12 @@ button {
     font-weight: bold;
 }
 
+button:hover {
+    background-color: #495e57;
+    color: #F4CE14;
+    transition: 0.25s;
+}
+
 footer h3 {
     font-family: "Karla";
 }
@@ -94,6 +107,11 @@ footer section {
     width: 80%;
     margin-left: 10%;
     gap: 20px;
+}
+
+footer ul li:hover {
+    color: #F4CE14;
+    transition: 0.25s;
 }
 
 
@@ -110,5 +128,5 @@ footer img {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    
+
 }

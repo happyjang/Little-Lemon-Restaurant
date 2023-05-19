@@ -1,11 +1,10 @@
 import React from "react";
 
-const Main = () => {
+const BookingForm = () => {
     return (
         <>
-
         </>
-    )
-};
+    );
+}
 
-export default Main;
+export default BookingForm;
