@@ -10,14 +10,13 @@ import './App.css';
 
 function App() {
   return (
-    <>
-     <Header/>
-     <Nav/>   
-     <Main/>
-     <Footer/> 
-     <BookingForm/>
-     <BookingPage/>
-    </>
+    <div>
+      <Header />
+      <Nav />
+      <Main />
+      <Footer />      
+      <BookingPage />
+    </div>
   );
 }
 
