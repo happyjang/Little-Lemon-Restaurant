@@ -13,13 +13,14 @@ const BookingForm = (props) => {
     }
 
     const handleChange = (e) => {
-        setDate(e)
+        setDate(e);
     }
 
     return (
 
         <div>
             <form onSubmit={handleSubmit}>
+                <span data-testid>Book a table</span>
                 <fieldset>
                     <div>
                         <label htmlFor="res-date">Choose Date</label>
