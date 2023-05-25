@@ -10,7 +10,7 @@ const BookingForm = (props) => {
     const [date, setDate] = useState("");
     const [guests, setGuests] = useState("");
     const [occasion, setOccasion] = useState("");
-    
+
     const navigate = useNavigate();
 
 
@@ -18,21 +18,11 @@ const BookingForm = (props) => {
         //e.preventDefault()
         //props.submitForm(e);
 
-
         if (date !== "" && guests > 0 && occasion !== "" && occasion !== "0") {
-            
+
             navigate("/ConfirmBooking")
         }
-        
-        
-                        
-        
 
-    }
-
-    const handleSelect = (value) => {
-        console.log("occasion: ", occasion)
-        setOccasion(value)
     }
 
     const handleChange = (e) => {
@@ -50,16 +40,16 @@ const BookingForm = (props) => {
                         <div>
                             <label htmlFor="res-date">Choose Date</label>
                             <input
-                                
-                                type="date" 
+
+                                type="date"
                                 id="res-date"
                                 value={date}
                                 onChange={(e) => {
                                     handleChange(e.target.value)
 
                                 }}
-                                required/>
-                            
+                                required />
+
                         </div>
                         <div>
                             <label htmlFor="res-time">Choose Time</label>
@@ -75,8 +65,8 @@ const BookingForm = (props) => {
                         </div>
                         <div>
                             <label htmlFor="guests">Number of guests</label>
-                            <input type="number" 
-                                
+                            <input type="number"
+
                                 id="quests"
                                 placeholder={0}
                                 min={1}
@@ -86,30 +76,25 @@ const BookingForm = (props) => {
                                     setGuests(e.target.value)
                                 }}
                                 required
-                                
+
 
                             />
-                            
+
                         </div>
                         <div>
                             <label htmlFor="">Occasion</label>
-                            <select id="occasion"
-                                value={occasion}
-                                onChange={(e) => {
-                                    handleSelect(e.target.value)
-                                    
-                                }}>
-                                <option value="0" selected>Please choose an occasion</option>
-                                <option value="Birthday">Birthday</option>
-                                <option value="Anniversary">Anniversary</option>
+                            <select id="occasion" key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)} required>
+                                <option value="">Select an Option</option>
+                                <option>Birthday</option>
+                                <option>Anniversary</option>
                             </select>
                         </div>
                         <div>
-                        {/* <button onClick={() => navigate("/ConfirmBooking")} type="submit" value="Make Your Reservation"></button> */}
-                        <button onClick={handleSubmit} type="submit">Make Your Reservation</button>
-                        
+                            {/* <button onClick={() => navigate("/ConfirmBooking")} type="submit" value="Make Your Reservation"></button> */}
+                            <button onClick={handleSubmit} type="submit">Make Your Reservation</button>
+
                         </div>
-                        
+
 
                     </fieldset>
                 </form>
