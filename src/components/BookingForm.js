@@ -1,11 +1,18 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+
+
 
 const BookingForm = (props) => {
 
     const [date, setDate] = useState("");
     const [guests, setGuests] = useState("");
     const [occasion, setOccasion] = useState("");
+
+    const navigate = useNavigate();
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -19,7 +26,7 @@ const BookingForm = (props) => {
 
     return (
 
-        <div>
+        <div style={{ marginTop: "100px" }}>
             <form onSubmit={handleSubmit}>
                 <span data-testid>Book a table</span>
                 <fieldset>
@@ -38,7 +45,7 @@ const BookingForm = (props) => {
                     <div>
                         <label htmlFor="res-time">Choose Time</label>
                         <select id="res-time" required>
-                            {props.times.availableTimes.map((time) => (
+                            {props?.times?.availableTimes.map((time) => (
                                 <option value={time} key={time}>
                                     {time}
                                 </option>
@@ -73,7 +80,7 @@ const BookingForm = (props) => {
                         </select>
                     </div>
                     <div>
-                        <input aria-label="On Click" type={"submit"} value={"Make Your Reservation"}></input>
+                        <input aria-label="On Click" onClick={() => navigate("/ConfirmBooking")} type={"submit"} value={"Make Your Reservation"}></input>
                     </div>
 
                 </fieldset>

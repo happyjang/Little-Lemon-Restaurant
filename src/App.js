@@ -1,9 +1,8 @@
-import Header from './components/Header';
+// import Header from './components/Header';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import BookingForm from './components/BookingForm';
-import BookingPage from './components/BookingPage';
+// import BookingPage from './components/BookingPage';
 import './App.css';
 
 
@@ -11,11 +10,11 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Nav />
       <Main />
       <Footer />      
-      <BookingPage />
+      {/* <BookingPage /> */}
     </div>
   );
 }
