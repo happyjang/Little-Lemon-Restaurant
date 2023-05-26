@@ -92,8 +92,8 @@ const BookingForm = (props) => {
                             </select>
                         </div>
                         <div>
-                            {/* <button onClick={() => navigate("/ConfirmBooking")} type="submit" value="Make Your Reservation"></button> */}
-                            <button onClick={handleSubmit} type="submit">Make Your Reservation</button>
+
+                            <button onClick={handleSubmit} aria-label="On Click" type="submit">Make Your Reservation</button>
 
                         </div>
 
