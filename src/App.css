@@ -13,6 +13,7 @@ nav {
     justify-content: center;
     background-color: white;
     font-weight: bold;
+    
 }
 
 
@@ -24,14 +25,22 @@ nav img {
 nav ul li {
     display: inline-block;
     padding: 1em;
+
 }
+
+#bookingLink {
+    text-decoration: none;
+}
+
+
 
 header {
     padding-top: 120px;
     background-color: #495e57;
 }
 
-nav ul li:hover {
+nav ul li:hover,
+#bookingLink:hover {
     color: #F4CE14;
     transition: 0.25s;
 }
@@ -80,7 +89,7 @@ header img {
     border-radius: 16pt;
 }
 
-button {
+.reserve-a-table {
     background-color: #F4CE14;
     color: black;
     padding: 15px;
@@ -90,6 +99,18 @@ button {
     font-size: 16pt;
     font-weight: bold;
 }
+
+.make-your-reservation {
+    background-color: #F4CE14;
+    color: black;
+    padding: 8px;
+    border: none;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
 
 button:hover {
     background-color: #495e57;
@@ -115,7 +136,6 @@ footer ul li:hover {
     transition: 0.25s;
 }
 
-
 footer {
     padding: 20px;
 }
@@ -130,4 +150,22 @@ footer img {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+}
+span {
+    color: #F4CE14;
+    font-size: 20pt;
+    font-family: "Marzaki Text";
+}
+
+label {
+    color:#EDEFEE;
+    font-size: 12pt;
+    font-family: "Karla";
+    padding: 8px;    
+}
+
+h1 {
+    color: #F4CE14;
+    font-size: 18pt;
+    font-family: "Karla";
 }

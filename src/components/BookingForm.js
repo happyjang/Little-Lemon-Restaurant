@@ -18,7 +18,7 @@ const BookingForm = (props) => {
         //e.preventDefault()
         //props.submitForm(e);
 
-        if (date !== "" && guests > 0 && occasion !== "" && occasion !== "0") {
+        if (date !== "" && guests > 0 && occasion !== "" ) {
 
             navigate("/ConfirmBooking")
         }
@@ -35,11 +35,12 @@ const BookingForm = (props) => {
             <section>
 
                 <form>
-                    <span data-testid>Reserve a table</span>
+                    <span>Reserve a table</span>
                     <fieldset>
                         <div>
                             <label htmlFor="res-date">Choose Date</label>
-                            <input
+                            <input 
+                            data-testid = "testdate"
 
                                 type="date"
                                 id="res-date"
@@ -93,7 +94,7 @@ const BookingForm = (props) => {
                         </div>
                         <div>
 
-                            <button onClick={handleSubmit} aria-label="On Click" type="submit">Make Your Reservation</button>
+                            <button className="make-your-reservation" onClick={handleSubmit} aria-label="On Click" type="submit">Make Your Reservation</button>
 
                         </div>
 

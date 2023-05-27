@@ -1,5 +1,6 @@
 import React from "react";
 import logo2 from "../Images/logo2.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -14,7 +15,7 @@ const Footer = () => {
                         <li>Home</li>
                         <li>About</li>
                         <li>Menu</li>
-                        <li>Reservation</li>
+                        <li><Link id="bookingLink" to="/BookingPage">Reservation</Link></li>
                         <li>Order Online</li>
                         <li>Login</li>
                     </ul>
