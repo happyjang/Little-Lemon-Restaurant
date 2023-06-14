@@ -54,7 +54,7 @@ const Main = () => {
     return (
         <main>
             <Routes>
-                <Route path="/" element={<Header />} />
+                <Route path="/Little-Lemon-Restaurant" element={<Header />} />
                 <Route path="/BookingPage" element={<BookingPage times={availableTimes} dispatch={dispatch} />} />
                 <Route path="/ConfirmBooking" element={<ConfirmBooking />} />
             </Routes>
